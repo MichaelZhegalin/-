@@ -5,13 +5,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
-	<title>Тренажер памяти</title>
+	<title>Окно регистрации</title>
 </head>
 <body>
+
 	<div id="root">
-		<div class="text">Перед тем как увидеть задание нажмите "Начать!"</div>
-		<div id = "field" class="playing_field"></div>
-		<button class="Start_game" >Начать!</button>
+		<div class="text">Регистрация</div>
+		<form onsubmit = 'event.preventDefault()' action="#" method="" class="button">
+			<div class="reg_win">
+				<span>Логин:</span>
+				<input type="text" name="log" class="log"><br>
+				<span>Пароль:</span>
+				<input type="password" name="pas" class="pas"><br>
+				<p class="warning">Длина пароля должна быть более 5 символов!</p>
+					<div class="button">
+						<div class="reg">Зарегистрироваться</div>
+					</div>
+			</div>
+		</form>
 	</div>
 	
 	<script src="js/js.js"></script>
